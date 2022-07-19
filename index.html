@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./assets/img/icons/jobi.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Jobi</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link href="./tailwind.css" rel="stylesheet">
+    <style>
+      body{
+        margin: 0;
+      }
+    </style>
+    
+
+<style>
+
+
+  a:hover{
+    transform:translateY(2px);
+  }
+	.link-underline {
+		border-bottom-width: 0;
+		background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
+		background-size: 0 3px;
+		background-position: 0 100%;
+		background-repeat: no-repeat;
+		transition: background-size .5s ease-in-out;
+	}
+
+	.link-underline-black {
+		background-image: linear-gradient(transparent, transparent), linear-gradient(#51a366, #51a366)
+	}
+
+	.link-underline:hover, 
+  .active {
+		background-size: 100% 3px;
+		background-position: 0 100%
+	}
+  
+#theOptions{
+  display: none;
+}
+
+
+/*----------------dashboards inlarge---------------------*/
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  .navbar.scrolled{
+    background: rgba(0, 0, 0, 0.692);
+  }
+/*-----------------screen response-----------------------*/
+
+@media (min-width: 768px) {
+  
+}
+
+@media (min-width: 1024px) {
+}
+
+</style>
+
+  </head>
+  <body class="bg-orange-200 h-full">
+
+    <!--Navbar-->
+    <nav class="navbar flex lg:w-screen fixed items-center bg-transparent p-3 flex-wrap fixed top-0 left-0 right-0 px-5 z-10">
+      <a href="./index.html"  class="mr-2 inline-flex items-center w-1/4">
+        <img class="w-10" src="./assets/img/icons/jobi.png" alt="">
+        <p class="text-xl text-gray-900 font-bold upper-case tracking-wide">Jobi</p>
+    </a>
+      <button id="openOptions" class="text-white inline-flex p-3 hover:bg-gray-900 rounded lg:hidden ml-auto">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="lg:hidden">
+      <div id="theOptions" class="absolute lg:relative bg-white lg:bg-transparent  top-20 right-0 lg:hidden">
+      <div class="w-screen flex justify-center lg:w-1/2 relative top-nav lg:inline-flex lg:flex-grow lg:w-auto justify-center" id="navigation">
+        <div class="lg:inline-flex  lg:flex-row flex flex-col">
+          <a href="./solution.html" class="lg:inline-flex lg:w-auto px-3 rounded text-gray-800">
+            <span class="link link-underline link-underline-black">Services</span>
+          </a>
+          <a href="./map.html" class="lg:inline-flex lg:w-auto px-3 rounded text-gray-800">
+            <span class="link link-underline link-underline-black">Association</span>
+          </a>
+          <a href="./blog.html" class="lg:inline-flex lg:w-auto px-3 rounded text-gray-800">
+            <span class="link link-underline link-underline-black">About</span>
+          </a>
+          <a href="./team.html" class="lg:inline-flex lg:w-auto px-3 rounded text-gray-800">
+            <span class="link link-underline link-underline-black">Team</span>
+          </a>
+          <a href="./tech.html" class="lg:inline-flex lg:w-auto px-3 rounded text-gray-800">
+            <span class="link link-underline link-underline-black">Talent</span>
+          </a>
+        </div>
+      </div>
+      <div class="relative w-screen flex justify-center lg:right-0 lg:w-1/4 lg:justify-end top-nav lg:inline-flex lg:flex-grow lg:w-auto">
+        <div class="grid lg:inline-flex lg:flex-row">
+          <a href="./contact.html" class="lg:inline-flex lg:w-auto px-3 rounded text-blue-600">
+            <span>
+              Contact Us
+            </span>
+          </a>
+          <a href="./expertPlace.html" class="lg:inline-flex lg:w-auto px-3 rounded text-gray-700">
+            <span>
+              Login
+            </span>
+          </a>
+        </div>
+      </div>
+      </div>
+    </div>
+      <div class="absolute hidden lg:relative bg-white lg:bg-transparent  top-20 right-0 lg:top-0 lg:inline-flex lg:flex-grow lg:w-auto">
+      <div class="w-screen flex justify-center lg:w-1/2 relative top-nav lg:inline-flex lg:flex-grow lg:w-auto justify-center" id="navigation">
+        <div class="lg:inline-flex  lg:flex-row flex flex-col">
+          <a href="./solution.html" class="lg:inline-flex lg:w-auto px-3 rounded text-gray-700">
+            <span class="link link-underline link-underline-black">Services</span>
+          </a>
+          <a href="./map.html" class="lg:inline-flex lg:w-auto px-3 rounded text-gray-700">
+            <span class="link link-underline link-underline-black">Association</span>
+          </a>
+          <a href="./blog.html" class="lg:inline-flex lg:w-auto px-3 rounded text-gray-700">
+            <span class="link link-underline link-underline-black">About</span>
+          </a>
+          <a href="./team.html" class="lg:inline-flex lg:w-auto px-3 rounded text-gray-700">
+            <span class="link link-underline link-underline-black">Team</span>
+          </a>
+          <a href="./tech.html" class="lg:inline-flex lg:w-auto px-3 rounded text-gray-700">
+            <span class="link link-underline link-underline-black">Talent</span>
+          </a>
+        </div>
+      </div>
+      <div class="relative w-screen flex justify-center lg:right-0 lg:w-1/4 lg:justify-end top-nav lg:inline-flex lg:flex-grow lg:w-auto">
+        <div class="grid lg:inline-flex lg:flex-row">
+          <a href="./contact.html" class="lg:inline-flex lg:w-auto px-3 rounded text-blue-600">
+            <span>
+              Contact Us
+            </span>
+          </a>
+          <a href="./expertPlace.html" class="lg:inline-flex lg:w-auto px-3 rounded text-gray-400">
+            <span>
+              Login
+            </span>
+          </a>
+        </div>
+      </div>
+      </div>
+    </nav>
+
+    <!--Team profiles-->
+    <main class="w-full flex h-screen w-screen items-center justify-center">
+      
+      <div class="relative">
+        <h1 class="text-gray-900 text-3xl sm:text-5xl md:text-7xl font-bold">Defining Success!</h1>
+      </div>
+    </main>
+    <footer id="footer" class="w-full relative md:flex md:items-end md:h-1/4 sm:px-5 md:px-5 lg:px-10">
+      
+    </footer>
+    <script type="module" src="./animating_background.js"></script>
+    <script>
+      const openOptions = document.querySelector('#openOptions')
+      const theOptions = document.querySelector('#theOptions')
+
+      openOptions.addEventListener('click', () => {
+        if(theOptions.style.display == 'none'){
+          theOptions.style.display = 'block';
+        }
+        else{
+          theOptions.style.display = 'none';
+        }
+      });
+
+
+    //when scrolling, navbar darkens
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 250){
+        $('.navbar').addClass('scrolled');
+      }else{
+        $('.navbar').removeClass('scrolled');
+      }
+    })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,132 @@
+.circular{
+    position: relative;
+    width: 300px;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circular:hover h2{
+    color: #fff;
+}
+
+.circular span:nth-child(1)
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: spiner 6s linear infinite;
+} 
+
+.circular:hover span:nth-child(1)
+{
+    background: rgb(21, 129, 50);
+    border: none;
+} 
+
+.circular span:nth-child(2)
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: spiner2 4s linear infinite;
+} 
+
+.circular:hover span:nth-child(2)
+{
+    background: rgb(16, 119, 44);
+    border: none;
+} 
+
+.circular span:nth-child(3)
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: spiner 10s linear infinite;
+} 
+
+.circular:hover span:nth-child(3)
+{
+    background: rgb(4, 94, 28);
+    border: none;
+} 
+
+
+@keyframes spiner{
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes spiner2{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.info{
+    position: relative;
+    padding: 20px 30px;
+    text-align: center;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.info .read{
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+    border: 2px solid #fff;
+    padding: 6px 18px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 73% 27% 44% 56% / 49% 44% 56% 51%;
+}
+
+.info .read:hover{
+    background: #fff;
+    color: #333;
+    cursor: pointer;
+    transform:translateY(2px);
+    transition: 1s;
+}
+
+/*------------clients---------*/
+.clients{
+    position: relative;
+    width: max-content;
+}
+.clients::after{
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 3px;
+    background:rgb(6, 150, 45);
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
