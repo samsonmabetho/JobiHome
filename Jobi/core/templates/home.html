@@ -1,0 +1,260 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/svg+xml" href="{% static '../static/img/icons/jobi.png' %}">
+
+
+    <link rel="stylesheet" href="{% static '../static/css/tailwind.css' %}">
+    <link rel="stylesheet" href="{% static '../static/css/home.css' %}">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Welcome to Jobi</title>
+</head>
+
+<style>
+
+.display-section{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 8%, rgba(39,39,203,1) 100%, rgba(0,212,255,1) 100%);
+}
+.slider-navigation .nav-btn{
+    transition: 0.3s ease;
+}
+.slider-navigation .nav-btn:hover{
+    transform: scale(0.9);
+}
+
+
+
+.slider-navigation .nav-btn.active .point{
+    background: #05117e;
+}
+
+.socials:hover{
+    transform: scale(.9);
+}
+
+.socials{
+    transition: 0.3s ease;
+}
+
+.tabsections{
+    clip-path: circle(0% at 50% 94%);
+}
+
+.tabsections.active{
+    clip-path: circle(150.0% at 50% 100%);
+    transition: 3s ease;
+    transition-property: clip-path;
+}
+</style>
+
+<body class="bg-gray-700">
+    <div class="w-screen fixed top-0 z-50 h-16 flex items-center justify-between ">
+        <div>
+            <h3 class="text-gray-400 px-5 text-xl font-semibold font-mono">Jobi</h3>
+        </div>
+        <div>
+            <button class="text-gray-400 px-5">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </div>
+
+
+    <section class="home w-screen h-screen flex flex-col justify-center items-center overflow-hidden">
+
+        <div class="bg-gray-900 w-screen h-screen flex justify-center items-center">
+
+            <div class="content px-60 ">
+                <h1 class="flex items-center text-gray-300 text-7xl font-semibold font-mono">Defining Success!</h1>
+                </div>
+
+        </div>
+        <div class="tabsections bg-gray-500 w-screen h-screen flex absolute justify-center items-center">
+
+            <div class="content px-60 ">
+                <h1 class="text-3xl font-semibold">Services</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+        </div>
+        <div class="tabsections  bg-gray-500 w-screen h-screen flex absolute justify-center items-center">
+
+            <div class="content px-60 ">
+                <h1 class="text-3xl font-semibold">Associations</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+        </div>
+        <div class="tabsections bg-gray-500 w-screen h-screen flex absolute justify-center items-center">
+
+            <div class="content px-60 ">
+                <h1 class="text-3xl font-semibold">About</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+        </div>
+        <div class="tabsections bg-gray-500 w-screen h-screen flex absolute justify-center items-center">
+
+            <div class="content px-60 ">
+                <h1 class="text-3xl font-semibold">Talent</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+        </div>
+        
+
+        <div class="absolute right-0 z-50 top-0 h-screen">
+            <div class="px-4 flex flex-col items-center justify-center h-full">
+                <a class="socials" href="#"><i class="uil uil-linkedin text-3xl text-gray-400"></i></a>
+                <a class="socials" href="#"><i class="uil uil-twitter text-3xl text-gray-400"></i></a>
+                <a class="socials" href="#"><i class="uil uil-facebook-f text-3xl text-gray-400"></i></a>
+
+            </div>
+            
+        </div>
+
+        <div class="slider-navigation absolute z-50 bottom-0 left-0 w-screen px-96 pb-10">
+            <div class=" flex justify-center items-center w-full">
+                <div class="nav-btn px-2">
+                    <div class="w-2 h-2 rounded-full bg-gray-200 cursor-pointer point"></div>
+                </div>
+                <div class="nav-btn px-2">
+                    <div class="w-2 h-2 rounded-full bg-gray-200 cursor-pointer point"></div>
+                </div>
+                <div class="nav-btn px-2">
+                    <div class="w-2 h-2 rounded-full bg-gray-200 cursor-pointer point"></div>
+                </div>
+                <div class="nav-btn px-2">
+                    <div class="w-2 h-2 rounded-full bg-gray-200 cursor-pointer point"></div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+
+    
+
+    <!-- <div class="w-screen h-screen py-5 items-end justify-center">
+
+        <div class="px-32 h-4/5 w-full flex justify-center items-center">
+
+            <div class="w-screen">
+                <div class="p-4 w-full flex justify-center">
+                    <h2 class="text-gray-400 text-lg">Book a flight with us!</h2>
+                </div>
+
+                <div class="display-section w-full p-5 rounded-md">
+
+                    <div class="w-full flex">
+
+
+
+                        <div class="w-1/2 h-20 relative rounded-md border">
+                            <div class="w-full flex h-full">
+
+                                <div class="w-1/2 h-full">
+                                    <h3 class="absolute -top-3 w-max bg-gray-900 left-5 text-gray-400">From</h3>
+                                </div>
+
+
+                                <div class="w-0.5 flex justify-center py-2 h-full">
+                                    <div class="w-1/2 h-full bg-white"></div>
+                                </div>
+
+
+                                <div class="w-1/2 h-full"></div>
+
+                            </div>
+                        </div>
+
+
+
+                        <div class="w-5"></div>
+                        <div class="w-1/2 h-20 rounded-md border"></div>
+                    </div>
+
+
+                    
+
+
+                </div>
+
+            </div>
+
+            
+
+
+
+        </div>
+
+        <div class="w-full flex justify-center items-end h-1/5">
+
+            <div class="w-1/2 flex flex-col justify-center">
+
+                <div class="w-full flex py-2 justify-between">
+                    <div class="px-4 flex flex-col justify-center">
+                        <p class="w-full flex justify-center cursor-pointer"><i class="fa-solid fa-plane-departure text-gray-400 text-4xl"></i></p>
+                        <p class="text-gray-400 flex justify-center">Flights</p>
+                    </div>
+                    <div class="px-4 flex flex-col justify-center">
+                        <p class="w-full flex justify-center cursor-pointer"><i class="fa-solid fa-hotel text-gray-400 text-4xl"></i></p>
+                        <p class="text-gray-400 flex justify-center">Hotels</p>
+                    </div>
+                    <div class="px-4">
+                        <p class="w-full flex justify-center cursor-pointer"><i class="fa-solid fa-train-subway text-gray-400 text-4xl"></i></p>
+                        <p class="text-gray-400 flex justify-center">Trains</p>
+                    </div>
+                    <div class="px-4">
+                        <p class="w-full flex justify-center cursor-pointer"><i class="fa-solid fa-taxi text-gray-400 text-4xl"></i></p>
+                        
+                        <p class="text-gray-400 flex justify-center">Cabs</p>
+                    </div>
+                    
+                </div>
+                <div class="h-5 w-full rounded-md bg-gray-500"></div>
+            </div>
+
+        </div>
+
+
+
+        
+        
+    </div> 
+-->
+
+    <script>
+        const tabs = document.querySelectorAll(".nav-btn");
+        const tabsections = document.querySelectorAll(".tabsections");
+
+        var slider = function(manual){
+
+            tabs.forEach((tab) => {
+                tab.classList.remove("active");
+            })
+            tabsections.forEach((tabsection) => {
+                tabsection.classList.remove("active");
+            })
+
+
+            tabs[manual].classList.add("active");
+            tabsections[manual].classList.add("active");
+        }
+
+        tabs.forEach((tab, i) => {
+            tab.addEventListener("click", () => {
+                slider(i);
+            })
+        })
+    </script>
+
+</body>
+</html>
